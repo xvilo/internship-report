@@ -25,3 +25,11 @@ textarea {
   font-family: "source-sans-pro",sans-serif;
   font-weight: normal;
 }
+
+a:not(.no-underline){
+  color:$black;
+  border-bottom: 3px solid $accent;
+  box-shadow: inset 0 -5px 0 $accent;
+  transition: background .15s cubic-bezier(.33,.66,.66,1);
+  &:hover{background: $accent;}
+}

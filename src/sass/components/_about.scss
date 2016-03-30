@@ -33,26 +33,31 @@
 .about--list{
   @extend .about--wrap;
   transition: $transition;
-  & li{
+  & h3{margin-bottom: rem(25px);}
+  & p{font-weight: normal; font-size:16px; line-height: 25px;}
+  & a{
+    color:white;
+    border-bottom: 3px solid $accent;
+    box-shadow: inset 0 -5px 0 $accent;
+    transition: background .15s cubic-bezier(.33,.66,.66,1);
+    &:hover{background: $accent;}
+  }
+  & > li{
     float: left;
     transition: $transition;
     width: 33.33333%;
-    padding: rem(6px);
+    padding: rem(24px);
     transform: translateY(rem(50px));
     opacity: 0;
   }
 }
 
 .about--item{
-  background:$accent;
   display: block;
   padding: rem(24px);
   height: 443px;
   position: relative;
   transition: $transition;
-  &:hover{
-    opacity: 0.8;
-  }
 }
 
 .about--item-description{
@@ -91,4 +96,56 @@
   left: rem(8px);
   width: 50px;
   height: 50px;
+}
+
+.about--person-name{
+  font-weight: normal;
+  font-size:20px;
+  margin-top: 15px;
+}
+
+.about--person-title{
+  @extend .title--text;
+  color:$dark-l;
+  & a {
+    border-bottom:1px dotted $dark-l;
+    box-shadow: inherit;
+    color:$dark-l;
+    &:hover{
+      background:none;
+    }
+  }
+}
+
+.about--copy{
+  @extend .title--text;
+  color:$dark-l;
+  font-size:rem(12px);
+  margin-top:rem(16px);
+}
+
+.social--list{
+  width: 100%;
+  display: block;
+
+  & > li{
+    float: left;
+    & a {
+      border-bottom:1px dotted $dark-l;
+      box-shadow: inherit;
+      line-height:rem(45px);
+      width: rem(45px);
+      height: rem(45px);
+      background:$dark-l;
+      border-radius: 50%;
+      margin-right:rem(25px);
+      text-align: center;
+      color:black;
+      display: block;
+      &:hover{
+        background:$dark-l;
+        opacity: 0.8;
+      }
+    }
+  }
 }
