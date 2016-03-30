@@ -35,4 +35,5 @@ $cubic:       cubic-bezier(0.070, 0.505, 0.335, 0.995);
 
 // Transition
 //------------------------------------------------------------------------------
-$transition: 0.25s ease-in-out;
+$cubic:       cubic-bezier(0.070, 0.505, 0.335, 0.995);
+$transition: 1s $cubic;

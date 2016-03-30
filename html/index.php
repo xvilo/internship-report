@@ -18,7 +18,7 @@
         <script src="https://use.typekit.net/vzn6zga.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
     </head>
-    <body class="menu-open">
+    <body>
         <!-- small-12 medium-8 large-5 -->
           <div class="quick-menu">
             <a href="#" id="open-menu" class="menu-toggle quick-menu--link">
@@ -42,7 +42,7 @@
             <div class="grid">
               <div class="grid__item small-12 medium-12 large-12">
                 <div class="section--title">
-                  <h6 class="section--title-text__sort title--text">Één.</h1>
+                  <h6 class="section--title-text__sort title--text">1.</h1>
                   <h1 class="section--title-text title--text">Titel van <br>dit hoofdstuk</h1>
                 </div>
               </div>
@@ -84,20 +84,38 @@
               </div>
               <ol class="menu--list">
                 <li><a href="#" class="menu--item">
-                  <p class="menu--item-title"><span>Één</span><br>Introduction</p>
+                  <p class="menu--item-title"><span>1</span><br>Introduction</p>
+                  <p class="menu--item-description">Kleine introductie over dit stage verslag die wat uitlegt over dit hoofdstuk en de lezer overhaalt om het te lezen</p>
+                </a></li>
+                <li><a href="#" class="menu--item">
+                  <p class="menu--item-title"><span>2</span><br>Another Item</p>
+                  <p class="menu--item-description"></p>
+                </a></li>
+                <li><a href="#" class="menu--item">
+                  <p class="menu--item-title"><span>3</span><br>Another Item</p>
                   <p class="menu--item-description">Suspendisse sagittis orci vitae ligula lacinia iaculis.</p>
                 </a></li>
                 <li><a href="#" class="menu--item">
-                  <p class="menu--item-title"><span>Twee</span><br>Another Item</p>
+                  <p class="menu--item-title"><span>4</span><br>Introduction</p>
+                  <p class="menu--item-description">Kleine introductie over dit stage verslag die wat uitlegt over dit hoofdstuk en de lezer overhaalt om het te lezen</p>
+                </a></li>
+                <li><a href="#" class="menu--item">
+                  <p class="menu--item-title"><span>5</span><br>Another Item</p>
+                  <p class="menu--item-description"></p>
+                </a></li>
+                <li><a href="#" class="menu--item">
+                  <p class="menu--item-title"><span>6</span><br>Another Item</p>
                   <p class="menu--item-description">Suspendisse sagittis orci vitae ligula lacinia iaculis.</p>
                 </a></li>
                 <li><a href="#" class="menu--item">
-                  <p class="menu--item-title"><span>Three</span><br>Another Item</p>
-                  <p class="menu--item-description">Suspendisse sagittis orci vitae ligula lacinia iaculis.</p>
+                  <p class="menu--item-title"><span>7</span><br>Introduction</p>
+                  <p class="menu--item-description">Kleine introductie over dit stage verslag die wat uitlegt over dit hoofdstuk en de lezer overhaalt om het te lezen</p>
                 </a></li>
               </ol>
             </nav>
           </section>
+          <section id="about">
+          </sction>
         <script async src="/media/javascripts/svg4everybody.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/media/javascripts/jquery.js"><\/script>')</script>

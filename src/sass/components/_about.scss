@@ -11,27 +11,27 @@
   overflow-y: scroll;
 }
 
-.menu--wrap{
+.about--wrap{
   max-width: $row-width;
   margin: 0 auto;
   padding: 0px rem(20px);
 }
 
-.menu--title{
+.about--title{
   font-size:rem(100px);
   line-height: rem(70px);
   margin:rem(50px) 0px rem(100px) 0px;
 }
 
-.menu-open{
+.about-open{
   #nav{
     visibility: visible;;
     opacity: 1;
   }
 }
 
-.menu--list{
-  @extend .menu--wrap;
+.about--list{
+  @extend .about--wrap;
   transition: $transition;
   & li{
     float: left;
@@ -43,7 +43,7 @@
   }
 }
 
-.menu--item{
+.about--item{
   background:$accent;
   display: block;
   padding: rem(24px);
@@ -55,7 +55,7 @@
   }
 }
 
-.menu--item-description{
+.about--item-description{
   position: absolute;
   bottom: rem(24px);
   width: 75%;
@@ -64,7 +64,7 @@
   @extend .text--small;
 }
 
-.menu--item-title{
+.about--item-title{
   @extend .text-small;
   color:$white;
   font-size:rem(25px);
@@ -76,18 +76,11 @@
 }
 
 .show-items{
-  .menu--list{
+  .about--list{
     & li{
       transform: translateY(rem(0px));
       opacity: 1;
       transition: inherit;
     }
-  }
-}
-
-@for $i from 0 to $max-menu-items {
-  .menu--list li:nth-child(#{$i}) {
-    $amount: 0.25*$i;
-     transition-delay: #{$amount}s;
   }
 }
