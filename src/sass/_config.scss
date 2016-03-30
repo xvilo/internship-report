@@ -1,4 +1,20 @@
 // Type
 //------------------------------------------------------------------------------
 
-$base-font-size: 16px; // Used to set intial rem scale in utilities/units
+$base-font-size: 21px; // Used to set intial rem scale in utilities/units
+
+$colors: (
+  black:      #000,
+  white:      $white,
+  beige:      $beige,
+  beige-muted:$beige-muted,
+  blue:       $blue,
+  blue-muted: $blue-muted,
+  green:      $green,
+  green-muted:$green-muted,
+  grey:       $grey,
+  grey-muted: $grey-muted,
+  grey-d:     $grey-d,
+  red:        map-get($themes, red),
+  green-theme: map-get($themes, green)
+);

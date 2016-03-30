@@ -1,7 +1,7 @@
 // Settings
 //------------------------------------------------------------------------------
 
-$row-width: rem(1224px);
+$row-width: rem(775px);
 $column-gutter: 0;
 $total-columns: 12;
 
@@ -54,4 +54,66 @@ body:after {
 
 body:after {
   content: '#{$breakpoint-list}';
+}
+
+@mixin grid-point($spacing-x: 36px) {
+  $grid-spacing-x: round($spacing-x * 0.5) !global;
+  $grid-breakpoint: 0em !global;
+  @content;
+
+  @media #{$medium-up} {
+    $grid-spacing-x: round($spacing-x * 0.75) !global;
+    $grid-breakpoint: nth($medium-range, 1) !global;
+    @content;
+  }
+
+  @media #{$large-up} {
+    $grid-spacing-x: $spacing-x !global;
+    $grid-breakpoint: nth($large-range, 1) !global;
+    @content;
+  }
+}
+
+.grid {
+  max-width: $row-width;
+  font-size: 0;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include grid-point {
+    @include rem((
+      padding-right: $grid-spacing-x / 2,
+      padding-left: $grid-spacing-x / 2
+    ));
+  }
+}
+
+.grid__item {
+  display: inline-block;
+  font-size: 1rem;
+  text-align: left;
+  vertical-align: top;
+
+  @include grid-point {
+    @include rem((
+      padding-right: $grid-spacing-x / 2,
+      padding-left: $grid-spacing-x / 2
+    ));
+  }
+}
+
+.grid--end {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.ipad-fix {
+  @media only screen and (max-width: $w-portrait) {
+    &[class*="medium-"] {
+      left: 0;
+      width: 100%!important;
+    }
+  }
 }
