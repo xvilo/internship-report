@@ -8,3 +8,20 @@ textarea {
   // font-family: ;
   // line-height: ;
 }
+
+.body--text {
+  font-family: "ff-tisa-web-pro",serif;
+  font-weight: normal;
+  margin: rem(25px) 0px;
+  letter-spacing:0.1px;
+}
+
+.title--text{
+  font-family: "source-sans-pro",sans-serif;
+  font-weight: bold;
+}
+
+.text--small{
+  font-family: "source-sans-pro",sans-serif;
+  font-weight: normal;
+}

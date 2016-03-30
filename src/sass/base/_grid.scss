@@ -1,7 +1,7 @@
 // Settings
 //------------------------------------------------------------------------------
 
-$row-width: rem(960px);
+$row-width: rem(1000px);
 $column-gutter: 0;
 $total-columns: 12;
 
@@ -97,8 +97,8 @@ body:after {
 
   @include grid-point {
     @include rem((
-      padding-right: $grid-spacing-x / 2,
-      padding-left: $grid-spacing-x / 2
+      padding-right: $grid-spacing-x  ,
+      padding-left: $grid-spacing-x,
     ));
   }
 }

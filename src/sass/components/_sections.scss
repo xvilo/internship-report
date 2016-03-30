@@ -1,0 +1,27 @@
+.section{
+  padding-top:rem(50px);
+}
+.section--title{
+  padding-top:rem(60px);
+  padding-bottom: rem(25px);
+  border-top:1px solid $grey;
+  border-bottom:1px solid $grey;
+}
+.section--title-text{
+  font-size: rem(62px);
+  line-height: rem(59px);
+  @media #{$small-only} {
+    font-size: rem(50px);
+    line-height: rem(50px);
+  }
+}
+
+
+.section--title-text__sort{
+  font-size: rem(52px);
+  line-height: rem(49px);
+  color: $accent;
+  @media #{$small-only} {
+    font-size: rem(30px);
+  }
+}

@@ -1,0 +1,38 @@
+#nav{
+  display: none;
+  position: fixed;
+  top:0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  background:$black;
+  color: white;
+}
+
+.menu--wrap{
+  max-width: $row-width;
+  margin: 0 auto;
+  padding: 0px rem(20px);
+}
+
+.menu--title{
+  font-size:rem(100px);
+  line-height: rem(70px);
+}
+
+.menu-open{
+  #nav{
+    display: block;
+  }
+}
+
+.menu--list{
+  @extend .menu--wrap;
+  margin-top:rem(20px);
+}
+
+@for $i from 0 to $max-menu-items {
+  div:nth-child(#{$i}) {
+     /* something here */
+  }
+}
