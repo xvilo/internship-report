@@ -20,6 +20,9 @@
     </head>
     <body>
         <!-- small-12 medium-8 large-5 -->
+        <div class="about-widget">
+          <a href="#" id="open-about" class="about-toggle about--link"><img src="/media/images/info.png"></a>
+        </div>
           <div class="quick-menu">
             <a href="#" id="open-menu" class="menu-toggle quick-menu--link">
               <span class="quick-menu--block block__red block__rect">
@@ -115,6 +118,12 @@
             </nav>
           </section>
           <section id="about">
+            <div class="menu--wrap">
+              <h1 class="title--text menu--title">about</h1>
+            </div>
+            <div class="about-widget">
+              <a href="#" id="open-about" class="about-toggle about--link"><img src="/media/images/close-grey.png"></a>
+            </div>
           </sction>
         <script async src="/media/javascripts/svg4everybody.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
