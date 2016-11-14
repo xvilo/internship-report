@@ -1,10 +1,10 @@
 {
-  "name": "desime",
-  "version": "0.1.0",
+  "name": "internship.report",
+  "version": "1.0.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@svn.builtbybuffalo.com:buffalo/desime.git"
+    "url": "git@github.com:xvilo/internship-report.git"
   },
   "dependencies": {
     "autoprefixer": "^6.1.2",
